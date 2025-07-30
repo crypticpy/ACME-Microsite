@@ -1728,6 +1728,7 @@ section {
     transform: translateX(-50%);
     width: 30px;
     height: 50px;
+    background: transparent;
     border: 2px solid rgba(255, 255, 255, 0.8);
     border-radius: 25px;
     cursor: pointer;
@@ -4083,6 +4084,7 @@ section {
     transform: translateX(-50%);
     width: 30px;
     height: 50px;
+    background: transparent;
     border: 2px solid rgba(107, 70, 193, 0.3);
     border-radius: 25px;
     display: flex;
