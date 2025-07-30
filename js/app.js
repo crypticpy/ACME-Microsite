@@ -579,6 +579,8 @@ const Navigation = {
     
     if (toggle && menu) {
       toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', (!expanded).toString());
         menu.classList.toggle('active');
         toggle.classList.toggle('active');
       });
@@ -594,6 +596,7 @@ const Navigation = {
           // Close mobile menu if open
           menu?.classList.remove('active');
           toggle?.classList.remove('active');
+          toggle?.setAttribute('aria-expanded', 'false');
         }
       });
     });
